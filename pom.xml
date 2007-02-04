@@ -5,7 +5,7 @@
     <groupId>org.livetribe</groupId>
     <artifactId>livetribe</artifactId>
     <name>LiveTribe</name>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <packaging>pom</packaging>
     <description>LiveTribe Systems Management Project</description>
     <url>http://livetribe.codehaus.org</url>
@@ -102,7 +102,7 @@
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
                 <artifactId>wagon-webdav</artifactId>
-                <version>1.0-beta-1</version>
+                <version>1.0-beta-2</version>
             </extension>
         </extensions>
         <defaultGoal>install</defaultGoal>
@@ -169,7 +169,7 @@
         <repository>
             <id>central</id>
             <name>Maven Central Repository</name>
-            <url>http://repo.mergere.com/maven2</url>
+            <url>http://repo1.maven.org/maven2</url>
         </repository>
         <repository>
             <id>snapshots</id>
