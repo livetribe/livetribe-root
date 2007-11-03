@@ -5,7 +5,7 @@
     <groupId>org.livetribe</groupId>
     <artifactId>livetribe</artifactId>
     <name>LiveTribe</name>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.2.0</version>
     <packaging>pom</packaging>
     <description>LiveTribe Systems Management Project</description>
     <url>http://livetribe.codehaus.org</url>
@@ -63,6 +63,11 @@
             <id>maguro</id>
             <name>Alan D. Cabrera</name>
             <timezone>-8</timezone>
+        </developer>
+        <developer>
+            <id>jgenender</id>
+            <name>Jeff Genender</name>
+            <timezone>-7</timezone>
         </developer>
         <developer>
             <id>hogstrom</id>
@@ -167,9 +172,14 @@
 
     <repositories>
         <repository>
+            <id>livetribe</id>
+            <name>LiveTribe Repository</name>
+            <url>http://dist.codehaus.org/livetribe/maven/m2</url>
+        </repository>
+        <repository>
             <id>central</id>
             <name>Maven Central Repository</name>
-            <url>http://repo1.maven.org/maven2</url>
+            <url>http://www.ibiblio.org/maven2</url>
         </repository>
         <repository>
             <id>snapshots</id>
@@ -216,11 +226,21 @@
         <repository>
             <id>livetribe-repo</id>
             <name>LiveTribe Central Repository</name>
-            <url>dav:https://dav.codehaus.org/repository/livetribe/</url>
+            <url>dav:https://dav.codehaus.org/dist/livetribe/maven/m2/</url>
         </repository>
         <snapshotRepository>
             <id>livetribe-snapshots</id>
             <name>LiveTribe Central Snapshots Repository</name>
+            <url>dav:https://dav.codehaus.org/dist/livetribe/maven/m2-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>codehaus-repo</id>
+            <name>CodeHaus Central Repository</name>
+            <url>dav:https://dav.codehaus.org/repository/livetribe/</url>
+        </repository>
+        <snapshotRepository>
+            <id>codehaus-snapshots</id>
+            <name>CodeHaus Central Snapshots Repository</name>
             <url>dav:https://dav.codehaus.org/snapshots.repository/livetribe/</url>
         </snapshotRepository>
         <site>
