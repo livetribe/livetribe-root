@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.codehaus</groupId>
         <artifactId>codehaus-parent</artifactId>
-        <version>3</version>
+        <version>4</version>
     </parent>
 
     <groupId>org.livetribe</groupId>
@@ -120,7 +120,7 @@
                         <target>1.5</target>
                         <showDeprecation>true</showDeprecation>
                         <showWarnings>true</showWarnings>
-                        <compilerArgument>-Xlint,-serial,-unchecked</compilerArgument>
+                        <compilerArgument>-Xlint:all,-serial,-unchecked</compilerArgument>
                     </configuration>
                 </plugin>
 
@@ -143,18 +143,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
-                    <version>2.0.1</version>
-                    <dependencies>
-                        <dependency>
-                            <groupId>org.apache.maven</groupId>
-                            <artifactId>maven-archiver</artifactId>
-                            <!--
-                                FIXME: 2.1 is broken... won't allow custom manifestEntires, need to use
-                                this snap until new maven war plugin is released.
-                            -->
-                            <version>2.2</version>
-                        </dependency>
-                    </dependencies>
+                    <version>2.2</version>
                     <configuration>
                         <archive>
                             <manifestEntries>
@@ -171,6 +160,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
+                    <version>2.2.2</version>
                     <configuration>
                         <goals>deploy</goals>
                     </configuration>
@@ -181,6 +171,7 @@
             <plugin>
                 <groupId>org.papoose.plugins</groupId>
                 <artifactId>version-maven-plugin</artifactId>
+                <version>1.1.0</version>
                 <executions>
                     <execution>
                         <id>validate-java-version</id>
@@ -197,6 +188,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.5.1</version>
                 <executions>
                     <execution>
                         <goals>
@@ -225,10 +217,12 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
-            </plugin>
+                <version>2.5.1</version>
+           </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
+                <version>2.4.0</version>
             </plugin>
         </plugins>
     </reporting>
