@@ -100,7 +100,7 @@
     <scm>
         <connection>scm:git:git@github.com:livetribe/livetribe-root.git</connection>
         <developerConnection>scm:git:git@github.com:livetribe/livetribe-root.git</developerConnection>
-        <url>https://github.com/livetribe/livetribe-root</url>
+        <url>scm:git:git@github.com:livetribe/livetribe-root.git</url>
     </scm>
 
     <organization>
